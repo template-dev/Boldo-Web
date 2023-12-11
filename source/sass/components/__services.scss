@@ -1,0 +1,140 @@
+.services-page {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media(min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.services-wrapper {
+  max-width: $desktop-width;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services__title-small {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: $blockTitleColor;
+  text-align: center;
+  margin-top: 82px;
+  margin-bottom: 12px;
+}
+
+.services__title-block {
+  font-family: Manrope;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 78px;
+  max-width: 842px;
+  width: 100%;
+}
+
+.services__list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 100px;
+  margin: 0 auto 206px auto;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 206px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service__item {
+  max-width: 300px;
+  width: 100%;
+
+  img {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
+.service__item-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000000;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.service__item-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: $blockTitleColor;
+  margin-bottom: 28px;
+  margin-top: 0;
+}
+
+.service__item-link {
+  display: flex;
+  align-items: center;
+  color: $headerBgColor;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  margin-top: 0;
+  text-decoration: none;
+  position: relative;
+  display: inline-flex;
+  transition: 0.3s;
+
+  svg {
+    margin-left: 12px;
+    transition: 0.3s;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $headerBgColor;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    transition: 0.3s;
+    color: $buyLinkBorderColor;
+
+    svg {
+      stroke: $buyLinkBorderColor;
+      fill: $buyLinkBorderColor;
+      transition: 0.3s;
+    }
+
+    &::after {
+      background-color: $buyLinkBorderColor;
+      transition: 0.3s;
+    }
+  }
+}

@@ -355,7 +355,7 @@
 
   /* width */
   &::-webkit-scrollbar {
-    height: 0;
+    height: 0px;
     border-radius: 5px;
   }
 
@@ -374,6 +374,10 @@
   /* Handle on hover */
   &::-webkit-scrollbar-thumb:hover {
     background: #555;
+  }
+
+  &:hover::-webkit-scrollbar {
+    height: 5px;
   }
 }
 
