@@ -170,7 +170,9 @@
 }
 
 .connect__chart {
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: -38%;
   border-radius: 12px;
   background: #FFF;
   box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.12);
@@ -184,14 +186,28 @@
     margin-top: 40px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: 962px) {
+  @media (min-width: $tablet-width) and (max-width: 784px) {
     width: 251px;
     position: absolute;
-    bottom: 0;
+    bottom: 4%;
     right: 58px;
   }
 
-  @media (min-width: 963px) {
+  @media (min-width: 785px) and (max-width: 869px) {
+    width: 251px;
+    position: absolute;
+    bottom: -5%;
+    right: 58px;
+  }
+
+  @media (min-width: 870px) and (max-width: 898px) {
+    width: 251px;
+    position: absolute;
+    bottom: -10%;
+    right: 58px;
+  }
+
+  @media (min-width: 899px) {
     width: 251px;
     position: absolute;
     bottom: -100px;
@@ -334,7 +350,6 @@
   flex-direction: column;
 
   img {
-    max-width: 444px;
     width: 100%;
     height: auto;
   }
@@ -343,6 +358,11 @@
     max-width: 494px;
     width: 100%;
     margin-top: 10px;
+
+    img {
+      max-width: 444px;
+      width: 100%;
+    }
   }
 }
 
@@ -454,36 +474,69 @@
 
   p {
     padding-left: 15px;
-
   }
 }
 
 .second__chart {
-  bottom: -170px;
   left: 48px;
   padding: 2px 15px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: -29%;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.12);
 
   svg {
     width: 100%;
     margin-top: 40px;
   }
 
-
-  @media (min-width: $tablet-width) and (max-width: 918px) {
+  @media (min-width: $tablet-width) and (max-width: 784px) {
     width: 291px;
     position: absolute;
-    bottom: -170px;
+    bottom: 3%;
     right: 58px;
+    margin-left: 0;
+    margin-top: 0;
   }
 
-  @media (min-width: 919px) {
+  @media (min-width: 785px) and (max-width: 806px) {
     width: 291px;
     position: absolute;
-    bottom: -170px;
+    bottom: -11%;
     right: 58px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  @media (min-width: 807px) and (max-width: 918px) {
+    width: 291px;
+    position: absolute;
+    bottom: -17%;
+    right: 58px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  @media (min-width: 919px) and (max-width: 952px) {
+    width: 291px;
+    position: absolute;
+    bottom: -22%;
+    right: 58px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  @media (min-width: 953px) {
+    width: 291px;
+    position: absolute;
+    bottom: -33%;
+    right: 58px;
+    margin-left: 0;
+    margin-top: 0;
   }
 }
