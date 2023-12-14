@@ -1,0 +1,144 @@
+.blog-page {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 124px;
+}
+
+.blog-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media(min-width: $tablet-width) {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.blog__title--small {
+  font-family: 'Open Sans', sans-serif;
+  color: $blockTitleColor;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.blog__title--big {
+  font-family: 'Manrope', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  color: #000000;
+  margin-top: 0;
+  text-align: center;
+
+  @media(min-width: $tablet-width) {
+    font-size: 48px;
+    line-height: 72px;
+    max-width: 842px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 79px;
+  }
+}
+
+.blog__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  @media(min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.blog__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      transition: 0.3s;
+      text-decoration: underline;
+      color: $buyLinkBorderColor;
+    }
+  }
+}
+
+.blog__main-image {
+  width: 100%;
+  height: auto;
+}
+
+.blog__item-category {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 28px;
+  display: flex;
+  gap: 12px;
+  padding: 0;
+}
+
+.item__category-text {
+  font-weight: 700;
+  color: $headerBgColor;
+}
+
+.item__category-date {
+  font-weight: 400;
+  color: $blockTitleColor;
+}
+
+.blog__item-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: -6px;
+  flex-grow: 1;
+}
+
+.blog__item-author {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.blog__load-link {
+  padding: 16px 56px;
+  border-radius: 56px;
+  border: 2px solid $headerBgColor;
+  color: $headerBgColor;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 84px;
+  transition: 0.3s;
+
+  &:hover {
+    transition: 0.3s;
+    background-color: $headerBgColor;
+    color: #ffffff;
+  }
+}
