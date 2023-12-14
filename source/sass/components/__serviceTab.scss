@@ -1,0 +1,127 @@
+.connect__tabs {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 124px;
+  padding-bottom: 158px;
+}
+
+.connect__tabs-wrapper {
+  @media(min-width: $tablet-width) {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.connect-tabs__image {
+  width: 100%;
+  height: auto;
+}
+
+.connect__tabs-info {
+  margin-top: 56px;
+
+  @media(min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.tabs-info__text {
+  color: #000000;
+  font-family: 'Manrope', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+
+  @media(min-width: $tablet-width) {
+    max-width: 500px;
+    width: 100%;
+    font-size: 36px;
+    line-height: 56px;
+  }
+}
+
+.connect-tabs__list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media(min-width: $tablet-width) {
+    max-width: 500px;
+    width: 100%;
+    margin-left: 10px;
+  }
+}
+
+.connect-tab__item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.connect-tab__title {
+  border: none;
+  background-color: transparent;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: #000000;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  transition: 0.3s;
+  cursor: pointer;
+
+  p {
+    text-align: left;
+  }
+
+  svg {
+    background-color: $headerBgColor;
+    min-width: 19px;
+    min-height: 19px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    transition: 0.3s;
+    background-color: lighten($headerBgColor, 7%);
+    color: #ffffff;
+    padding: 16px;
+  }
+}
+
+.connect-tab__title--active {
+  background-color: lighten($headerBgColor, 7%);
+  color: #ffffff;
+  transition: 0.3s;
+  padding: 16px;
+
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
+.connect-tab__description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: #000000;
+  display: none;
+}
+
+.connect-tab__description--active {
+  display: block;
+}
