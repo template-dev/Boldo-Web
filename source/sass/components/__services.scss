@@ -149,6 +149,8 @@
     justify-content: space-between;
     gap: 10px;
     margin-bottom: 226px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
@@ -327,6 +329,11 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 120px;
+
+  @media(min-width: $tablet-width) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 
 .connect__second-wrapper {
@@ -500,8 +507,8 @@
     position: absolute;
     bottom: 3%;
     right: 58px;
-    margin-left: 0;
-    margin-top: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   @media (min-width: 785px) and (max-width: 806px) {
