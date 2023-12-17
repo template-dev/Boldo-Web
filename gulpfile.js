@@ -17,6 +17,7 @@ import bemlinter from 'gulp-html-bemlinter';
 import { htmlValidator } from "gulp-w3c-html-validator";
 import fileInclude from "gulp-file-include";
 import replace from "gulp-replace";
+import Swiper from 'swiper';
 
 const sass = gulpSass(dartSass);
 let isDevelopment = true;
