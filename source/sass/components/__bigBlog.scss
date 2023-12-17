@@ -1,0 +1,135 @@
+.big-blog__page {
+  padding: 0 10px;
+  padding-top: 45px;
+}
+
+.big-blog__wrapper {
+  padding-bottom: 72px;
+  border-bottom: 1px solid $headerBgColor;
+
+  @media(min-width: $tablet-width) {
+    max-width: $desktop-width;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.blog__title-small {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: $headerBgColor;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.blog__title-big {
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 54px;
+  margin-top: 0px;
+
+  @media(min-width: $tablet-width) {
+    max-width: 842px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 64px;
+    line-height: 84px;
+  }
+}
+
+.big__blog {
+  display: flex;
+  flex-direction: column;
+
+  @media(min-width: 855px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    margin-top: 67px;
+  }
+}
+
+.big__blog-main-image {
+  width: 100%;
+  height: auto;
+
+  @media(min-width: 1040px) {
+    max-width: 550px;
+    width: 100%;
+    height: 386px;
+    height: auto;
+  }
+}
+
+.blog__category {
+  display: flex;
+  gap: 12px;
+}
+
+.blog__category-text {
+  font-family: 'Open Sans', sans-serif;
+  color: $headerBgColor;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.blog__category-date {
+  font-family: 'Open Sans', sans-serif;
+  color: $blockTitleColor;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.blog__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Manrope', sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+
+  &:hover {
+    transition: 0.3s;
+    color: $buyLinkColor;
+  }
+
+  @media(min-width: $tablet-width) and (max-width: 1040px) {
+    font-size: 38px;
+    line-height: 48px;
+    padding-right: 10px;
+  }
+
+  @media(min-width: 1041px) {
+    font-size: 48px;
+    line-height: 72px;
+  }
+}
+
+.blog__author {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.author__name {
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
